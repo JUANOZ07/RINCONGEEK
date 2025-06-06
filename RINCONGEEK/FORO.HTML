@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RINCON GEEK - Foro</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        header {
+            background-color: #646464;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #9c9c9c;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .foro-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color:  #646464;
+            padding: 20px;
+            border-radius: 10px;
+           
+        }
+
+        .foro-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .post-form textarea,
+        .post-form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .post-form input[type="submit"] {
+            background-color:  #9c9c9c;
+            color: white;
+            padding: 12px;
+            margin-top: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .post-form input[type="submit"]:hover {
+            background-color:  #9c9c9c;
+        }
+
+        .posts {
+            margin-top: 30px;
+        }
+
+        .post {
+            background-color: #9c9c9c;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .post h3 {
+            margin: 0 0 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #9c9c9c;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>RINCON GEEK</h1>
+        <p>Foro de debate y opiniones geek</p>
+    </header>
+
+    <nav class="nav">
+        <a href="RINCONGEEK.HTML">Inicio</a>
+       
+    </nav>
+
+    <div class="foro-container">
+        <h2>Comparte tu opinión geek</h2>
+
+        <form class="post-form">
+            <label for="usuario">Tu nombre:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="comentario">Tu mensaje:</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+            <input type="submit" value="Publicar">
+        </form>
+
+        <div class="posts">
+            <div class="post">
+                <h3>PedroGeek</h3>
+                <p>¿Soy el único que cree que Dragon Ball Broly tiene una animación brutalmente infravalorada?</p>
+            </div>
+            <div class="post">
+                <h3>AnaOtaku</h3>
+                <p>¡Estoy emocionada por el próximo live action de One Piece! ¿Alguien más?</p>
+            </div>
+            <div class="post">
+                <h3>NeoMatrix</h3>
+                <p>Matrix sigue siendo la mejor película de ciencia ficción de todos los tiempos. Fin del debate 😎</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 RINCON GEEK. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

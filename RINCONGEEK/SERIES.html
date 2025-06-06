@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Series Geek & Pop</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #646464;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .peliculas {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .pelicula {
+      background-color: #2c2c2c;  
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #000;
+       transition: transform 0.3s ease-in-out;
+    }
+    
+    .pelicula:hover{
+      transform: scale(1.05);
+    }
+
+    
+    .pelicula img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .pelicula .info {
+      padding: 15px;
+    }
+    .pelicula h2 {
+      font-size: 1.2em;
+      margin: 0 0 10px;
+    }
+    .pelicula p {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    .nav {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .nav a {
+      display: inline-block;
+      background-color: #ff6600;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 12px 30px;
+      border-radius: 25px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .nav a:hover {
+      background-color: #e65c00;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Series Geek & Pop</h1>
+    <p>Una selección de series imprescindibles para amantes de la cultura geek</p>
+  </header>
+
+  <section class="peliculas">
+    <div class="pelicula">
+      <img src="STRANGER.jpg" alt="Stranger Things">
+      <div class="info">
+        <h2>Stranger Things</h2>
+        <p>Un grupo de niños descubre fenómenos paranormales en su pequeño pueblo, conectados a una dimensión alterna.</p>
+      </div>
+    </div>
+
+    <div class="pelicula">
+      <img src="DOCTOR.JPG" alt="Doctor Who">
+      <div class="info">
+        <h2>Doctor Who</h2>
+        <p>Un viajero del tiempo conocido como el Doctor explora el universo enfrentando monstruos y salvando civilizaciones.</p>
+      </div>
+    </div>
+
+    <div class="pelicula">
+      <img src="RYM.JPG" alt="Rick and Morty">
+      <div class="info">
+        <h2>Rick and Morty</h2>
+        <p>Un científico excéntrico y su nieto viven aventuras alocadas por el multiverso, con humor negro y ciencia ficción.</p>
+      </div>
+    </div>
+
+    <div class="pelicula">
+      <img src="BLACK.JPG" alt="Black Mirror">
+      <div class="info">
+        <h2>Black Mirror</h2>
+        <p>Antología de historias que exploran el lado oscuro de la tecnología y su impacto en la sociedad moderna.</p>
+      </div>
+    </div>
+
+    <div class="pelicula">
+      <img src="MANDALORIAN.JPG" alt="The Mandalorian">
+      <div class="info">
+        <h2>The Mandalorian</h2>
+        <p>Un cazarrecompensas solitario atraviesa la galaxia protegiendo a un misterioso ser conocido como Grogu.</p>
+      </div>
+    </div>
+
+    <div class="pelicula">
+      <img src="CHELDON.JPG" alt="The Big Bang Theory">
+      <div class="info">
+        <h2>The Big Bang Theory</h2>
+        <p>Un grupo de científicos nerds lidia con la vida cotidiana, la amistad y el amor con mucho humor geek.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="nav">
+    <a href="RINCONGEEK.HTML">Volver al Inicio</a>
+  </div>
+
+</body>
+</html>

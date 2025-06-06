@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        header {
+            background-color: #646464;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #9c9c9c;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav a,
+        .nav button {
+            color: white;
+            background: none;
+            border: none;
+            margin: 0 15px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .nav a:hover,
+        .nav button:hover {
+            text-decoration: underline;
+        }
+
+        .form-container {
+            background-color: #9c9c9c;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #9c9c9c;
+            width: 100%;
+            max-width: 400px;
+            margin: 40px auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 96%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        input[type="submit"] {
+            background-color: #646464;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 101%;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: black;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .login-link a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #646464;
+            color: #bdc3c7;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido</h1>
+    </header>
+
+    <div class="nav">
+        <a href="RINCONGEEK.HTML">Volver al inicio</a>
+       
+    </div>
+
+    <div class="form-container" id="registro">
+        <h2>Crear Cuenta</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre de usuario:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Registrarse">
+        </form>
+        <div class="login-link">
+            ¿Ya tienes una cuenta? <a href="INICIO DE SESION.HTML">Inicia sesión aquí</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Tu Sitio Web. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
